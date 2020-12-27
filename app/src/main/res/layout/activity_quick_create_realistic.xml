@@ -7,7 +7,7 @@
     tools:context="com.dunca.charactergenerator.QuickCreateRealistic">
 
     <TextView
-        android:id="@+id/title_realistic_character_QuickCreate"
+        android:id="@+id/title_fantasy_character_QuickCreate"
         android:layout_width="349dp"
         android:layout_height="52dp"
         android:layout_marginTop="52dp"
@@ -29,7 +29,7 @@
         android:text="Click Randomise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_realistic_character_QuickCreate" />
+        app:layout_constraintTop_toBottomOf="@+id/title_fantasy_character_QuickCreate" />
 
     <Button
         android:id="@+id/randomise_button"

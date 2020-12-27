@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.mainactivity.R;
+import com.example.MainActivity.R;
 
 public class FantasyVRealistic extends AppCompatActivity {
     private Button fantasyButton;

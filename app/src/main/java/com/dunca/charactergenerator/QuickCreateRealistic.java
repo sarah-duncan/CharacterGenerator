@@ -7,7 +7,7 @@ import android.widget.EditText;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mainactivity.R;
+import com.example.MainActivity.R;
 
 public class QuickCreateRealistic extends AppCompatActivity {
 
@@ -26,7 +26,7 @@ public class QuickCreateRealistic extends AppCompatActivity {
         randomiseButton.setOnClickListener(new View.OnClickListener(){
                                                  @Override
                                                  public void onClick(View v){
-                                                     Randomise random = new Randomise();
+                                                     Randomise random = new RandomiseRealistic();
                                                      editTextShowDescription.setText(random.randomCharacter());
                                                  }
                                              }

@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.example.mainactivity.R;
+import com.example.MainActivity.R;
 
 public class EditModeFantasy extends AppCompatActivity {
 

@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mainactivity.R;
+import com.example.MainActivity.R;
 
 
 public class MainActivity extends AppCompatActivity {
