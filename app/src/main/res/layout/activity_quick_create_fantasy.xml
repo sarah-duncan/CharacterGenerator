@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/title_fantasy_character_QuickCreate"
-        android:layout_width="349dp"
-        android:layout_height="52dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="52dp"
         android:text="Fantasy Character Quick Create"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -20,8 +20,8 @@
 
     <EditText
         android:id="@+id/editText_show_description"
-        android:layout_width="323dp"
-        android:layout_height="84dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
         android:background="@android:color/transparent"
         android:ems="10"
@@ -33,8 +33,8 @@
 
     <Button
         android:id="@+id/randomise_button"
-        android:layout_width="141dp"
-        android:layout_height="57dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Randomise"
         app:layout_constraintBottom_toBottomOf="parent"
