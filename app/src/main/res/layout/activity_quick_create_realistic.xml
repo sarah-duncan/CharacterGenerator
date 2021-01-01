@@ -26,15 +26,19 @@
         android:text="Randomise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_show_description_realistic" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_show_description_realistic" />
 
-    <TextView
-        android:id="@+id/textView_show_description_realistic"
-        android:layout_width="179dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="8dp"
+    <EditText
+        android:id="@+id/editText_show_description_realistic"
+        android:layout_width="288dp"
+        android:layout_height="131dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
         android:text="Click Randomise"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_fantasy_character_QuickCreate" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

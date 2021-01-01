@@ -5,28 +5,29 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import com.example.MainActivity.R;
 
 public class QuickCreateFantasy extends AppCompatActivity {
 
-    private TextView textViewShowDescription;
+    private EditText editTextShowDescription;
     private Button randomiseButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_quick_create_realistic);
+        setContentView(R.layout.activity_quick_create_fantasy);
 
         randomiseButton = (Button) findViewById(R.id.randomise_button);
-        textViewShowDescription = (TextView) findViewById(R.id.textView_show_description_realistic);
+        editTextShowDescription = (EditText) findViewById(R.id.editText_show_description_fantasy);
 
         randomiseButton.setOnClickListener(new View.OnClickListener() {
                                                @Override
                                                public void onClick(View v) {
                                                    Randomise random = new RandomiseFantasy();
-                                                   textViewShowDescription.setText(random.randomCharacter());
+                                                   editTextShowDescription.setText(random.randomCharacter());
                                                }
                                            }
         );
