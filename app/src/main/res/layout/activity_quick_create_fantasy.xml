@@ -18,29 +18,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editText_show_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:background="@android:color/transparent"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Click Randomise"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_fantasy_character_QuickCreate" />
-
     <Button
         android:id="@+id/randomise_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:text="Randomise"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_show_description"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_show_description_fantasy" />
+
+    <TextView
+        android:id="@+id/textView_show_description_fantasy"
+        android:layout_width="210dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="8dp"
+        android:text="Cliick Randomise"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_fantasy_character_QuickCreate" />
 </androidx.constraintlayout.widget.ConstraintLayout>
