@@ -1,1 +1,0 @@
-CREATE DATABASE char_gen

@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name="com.dunca.charactergenerator.Library"></activity>
         <activity android:name="com.dunca.charactergenerator.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,38 +17,44 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dunca.charactergenerator.EditModeFantasy" >
-            <!--Default Intent Filter-->
+        <activity android:name="com.dunca.charactergenerator.EditModeFantasy">
+
+            <!-- Default Intent Filter -->
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dunca.charactergenerator.EditModeRealistic" >
-            <!--Default Intent Filter-->
+        <activity android:name="com.dunca.charactergenerator.EditModeRealistic">
+
+            <!-- Default Intent Filter -->
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dunca.charactergenerator.FantasyVRealistic" >
-            <!--Default Intent Filter-->
+        <activity android:name="com.dunca.charactergenerator.FantasyVRealistic">
+
+            <!-- Default Intent Filter -->
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dunca.charactergenerator.QuickCreateActivity" >
-            <!--Default Intent Filter-->
+        <activity android:name="com.dunca.charactergenerator.QuickCreateActivity">
+
+            <!-- Default Intent Filter -->
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dunca.charactergenerator.QuickCreateFantasy" >
-            <!--Default Intent Filter-->
+        <activity android:name="com.dunca.charactergenerator.QuickCreateFantasy">
+
+            <!-- Default Intent Filter -->
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dunca.charactergenerator.QuickCreateRealistic" >
-            <!--Default Intent Filter-->
+        <activity android:name="com.dunca.charactergenerator.QuickCreateRealistic">
+
+            <!-- Default Intent Filter -->
             <intent-filter>
                 <action android:name="android.intent.action.DEFAULT" />
             </intent-filter>

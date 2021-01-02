@@ -46,5 +46,14 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
         });
+
+        libraryButton = (Button) findViewById(R.id.library_button);
+        libraryButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public  void onClick(View v){
+                Intent intent = new Intent(MainActivity.this, Library.class);
+                startActivity(intent);
+            }
+        });
     }
 }
