@@ -1,11 +1,11 @@
 package com.dunca.charactergenerator;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.MainActivity.R;
 
@@ -17,12 +17,12 @@ public class FantasyVRealistic extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fantasy_v_realistic);
-        where_to = getIntent().getBooleanExtra("IS_THIS_QUICK_CREATE",true);
+        where_to = getIntent().getBooleanExtra("IS_THIS_QUICK_CREATE",false);
         fantasyButton = (Button) findViewById(R.id.fantasy_button);
         fantasyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(where_to = true){
+                if(where_to == true){
                     Intent intent = new Intent(FantasyVRealistic.this,QuickCreateFantasy.class);
                     startActivity(intent);
                 }
@@ -38,7 +38,7 @@ public class FantasyVRealistic extends AppCompatActivity {
         realisticButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(where_to = true){
+                if(where_to == true){
                     Intent intent = new Intent(FantasyVRealistic.this,QuickCreateRealistic.class);
                     startActivity(intent);
                 }

@@ -1,189 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.dunca.charactergenerator.EditModeRealistic">
+    android:orientation="vertical"
+    android:padding="20dp" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
+    //TODO Add name in
+    <EditText
+        android:id="@+id/profession_edit_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginLeft="1dp"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginRight="1dp"
-        android:layout_marginBottom="1dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10">
+        android:ems="10"
+        android:hint="@string/enter_profession" >
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:orientation="horizontal">
+        <requestFocus />
+    </EditText>
 
-            <TextView
-                android:id="@+id/textViewName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextName"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewAge"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Age"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editAge"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="number" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="93dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewProfession"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Profession"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextProfession"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="None" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="107dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hair Colour"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextHairColour"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="81dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewPhysicalTrait"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Hobbie"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextHobbie"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Add Trait"
-                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                android:textSize="24sp" />
-
-            <EditText
-                android:id="@+id/editTextAddTrait"
-                android:layout_width="wrap_content"
-                android:layout_height="80dp"
-                android:ems="10"
-                android:inputType="textPersonName" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewTrait"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Traits: Placeholder"
-                android:textSize="24sp" />
-        </LinearLayout>
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/hair_colour_edit_text"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="Charachter Descriptionn Placeholder"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.236"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonSave" />
+        android:ems="10"
+        android:hint="@string/enter_haircolour"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/hobby_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/enter_hobby"
+        android:inputType="textMultiLine"
+        android:minLines="5" >
+    </EditText>
 
     <Button
-        android:id="@+id/buttonSave"
+        android:id="@+id/add_record"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Save"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.922"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_gravity="center"
+        android:text="@string/add_record" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CharacterGenerator</string>
+    <string name="empty_list_text">FILLER</string>
+    <string name="add_record">add record</string>
+    <string name="enter_title">Enter Title</string>
+    <string name="enter_profession">Enter Profession</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="enter_haircolour">Enter Hair Colour</string>
+    <string name="enter_hobby">Enter Hobby</string>
 </resources>
