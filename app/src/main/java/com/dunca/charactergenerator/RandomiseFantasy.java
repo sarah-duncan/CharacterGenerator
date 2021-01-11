@@ -10,8 +10,8 @@ public class RandomiseFantasy implements Randomise {
     String[] fantasyHobbie= {"necromancy", "drinking", "cards", "nature", "adventuring", "brawling", "politics"};
 
     @Override
-    public String randomCharacter(){
-        return "A " + randomTrait(race) +" "+randomTrait(profession) + " with " +randomTrait(eyeColour)+ " " + randomTrait(hairColour)+ " hair, who enjoys " + randomTrait(fantasyHobbie)+ ".";
+    public String[] randomCharacter(){
+        return new String[]{randomTrait(race), randomTrait(profession), randomTrait(eyeColour), randomTrait(hairColour), randomTrait(fantasyHobbie)};
     }
 
     public String randomTrait(String[] trait){

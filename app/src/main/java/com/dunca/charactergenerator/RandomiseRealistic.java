@@ -10,8 +10,10 @@ public class RandomiseRealistic implements Randomise {
     String[] hobby = {"painting", "gaming"};
 
     @Override
-    public String randomCharacter(){
-        return "A " + randomTrait(profession) + " with " + randomTrait(hairColour)+ " hair, who enjoys " + randomTrait(hobby)+ ".";
+    public String[] randomCharacter(){
+        return new String[]{randomTrait(profession),
+                randomTrait(hairColour),
+                randomTrait(hobby)};
     }
 
     public String randomTrait(String[] trait){

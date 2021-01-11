@@ -1,12 +1,11 @@
 package com.dunca.charactergenerator;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.MainActivity.R;
 
@@ -14,6 +13,7 @@ public class QuickCreateFantasy extends AppCompatActivity {
 
     private EditText editTextShowDescription;
     private Button randomiseButton;
+    private String[] traits;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +27,9 @@ public class QuickCreateFantasy extends AppCompatActivity {
                                                @Override
                                                public void onClick(View v) {
                                                    Randomise random = new RandomiseFantasy();
-                                                   editTextShowDescription.setText(random.randomCharacter());
+                                                   traits= random.randomCharacter();
+                                                   editTextShowDescription.setText("A " + traits[0] + traits[1]+
+                                                           " with "+ traits[2]+ "eyes\n and"+ traits[3] +" hair, who enjoys "+ traits[4]+ ".");
                                                }
                                            }
         );
