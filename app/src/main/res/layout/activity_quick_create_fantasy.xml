@@ -22,22 +22,19 @@
         android:id="@+id/randomise_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
         android:text="Randomise"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_show_description_fantasy" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_randomise_fantasy" />
 
-    <EditText
-        android:id="@+id/editText_show_description_fantasy"
-        android:layout_width="272dp"
-        android:layout_height="146dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
+    <TextView
+        android:id="@+id/textView_randomise_fantasy"
+        android:layout_width="162dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_fantasy_character_QuickCreate"
-        tools:text="Click Randomise" />
+        app:layout_constraintTop_toBottomOf="@+id/title_fantasy_character_QuickCreate" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

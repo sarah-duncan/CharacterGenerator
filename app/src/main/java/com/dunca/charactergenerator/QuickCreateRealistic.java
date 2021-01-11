@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -15,7 +16,7 @@ import java.sql.SQLException;
 public class QuickCreateRealistic extends AppCompatActivity implements View.OnClickListener {
 
     //Defined views
-    private EditText editTextShowDescription;
+    private TextView textViewShowDescription;
     private Button randomiseButton;
     private Button addTodoBtn;
     private EditText professionEditText;
@@ -31,7 +32,7 @@ public class QuickCreateRealistic extends AppCompatActivity implements View.OnCl
         setContentView(R.layout.activity_quick_create_realistic);
 
         randomiseButton = (Button) findViewById(R.id.randomise_button);
-        editTextShowDescription = (EditText) findViewById(R.id.editText_show_description_realistic);
+        textViewShowDescription = (TextView) findViewById(R.id.textViewRandomise);
 
         addTodoBtn =(Button) findViewById(R.id.save_button);
 
@@ -48,7 +49,7 @@ public class QuickCreateRealistic extends AppCompatActivity implements View.OnCl
                                                  public void onClick(View v){
                                                      Randomise random = new RandomiseRealistic();
                                                      traits= random.randomCharacter();
-                                                     editTextShowDescription.setText("A " + traits[0] + " with\n "+
+                                                     textViewShowDescription.setText("A " + traits[0] + " with "+
                                                              traits[1]+ " hair, who enjoys "+ traits[2]+ "." );
                                                  }
                                              }
