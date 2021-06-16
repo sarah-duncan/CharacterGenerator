@@ -1,0 +1,13 @@
+Short Term:
+Have Library show the description
+Merge libraries into one
+      - Add master table with an id for every character regardless of status. Id being based on order of creation.
+      -This id is in the other table and it determines the order characters appear in
+Add delete button for library
+
+Long Term:
+Update Graphics
+Add custom create for fantasy
+Add profile page for in the library
+Add more options
+Let the user add more options in the setting

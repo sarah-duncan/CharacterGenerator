@@ -3,7 +3,7 @@ package com.dunca.charactergenerator;
 import java.util.Random;
 
 public class RandomiseFantasy implements Randomise {
-    String[] race ={"Human", "Elf", "Halfling","Orc", "Tabaxi", "Dragon"};
+    String[] race ={"Human", "Elf", "Halfling","Orc", "Dragon"};
     String[] profession ={"Ranger","Paladin", "Fighter", "Druid"};
     String[] eyeColour = {"brown", "red", "black", "blue"};
     String[] hairColour= {"brown", "black", "white", "blonde"};
