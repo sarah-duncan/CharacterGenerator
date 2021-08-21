@@ -7,8 +7,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.CursorAdapter;
 import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,7 +23,7 @@ public class Library extends AppCompatActivity {
 
     private ListView listView;
 
-    private SimpleCursorAdapter adapter;
+    private CursorAdapter adapter;
 
     final  String[] from = new String[]{DatabaseHelper._ID, DatabaseHelper.PROFESSION, DatabaseHelper.HAIRCOLOUR, DatabaseHelper.HOBBY};
 
@@ -41,14 +41,15 @@ public class Library extends AppCompatActivity {
             throwables.printStackTrace();
         }
         Cursor cursor = dbManager.fetch();
-
         listView = (ListView) findViewById(R.id.list_view);
         listView.setEmptyView(findViewById(R.id.empty));
 
-        adapter = new SimpleCursorAdapter(this, R.layout.activity_view_record, cursor, from, to, 0);
-        adapter.notifyDataSetChanged();
+        //For use on actual page
+        adapter = new RealisticTitleCardAdapter(this,cursor);
 
         listView.setAdapter(adapter);
+
+
 
         //OnClickListener For List Items
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
